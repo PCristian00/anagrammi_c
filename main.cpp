@@ -31,7 +31,7 @@ void ordinaStringa(char daOrd[], int n)
     char mem;
     for(int i=0;i<n;i++){
 
-        for(int j=i;j<n-1;j++){
+        for(int j=i;j<n;j++){
             if(daOrd[i]<daOrd[j]){
                 mem=daOrd[j];
                 daOrd[j]=daOrd[i];
