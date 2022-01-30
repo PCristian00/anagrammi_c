@@ -30,6 +30,7 @@ void ordinaStringa(char daOrd[], int n)
 {
     char mem;
     for(int i=0;i<n;i++){
+
         for(int j=i;j<n-1;j++){
             if(daOrd[i]<daOrd[j]){
                 mem=daOrd[j];
@@ -67,8 +68,9 @@ bool anagrammi(char s1[], char s2[])
 // Programma principale
 int main()
 {
-    char s1[]="Test";
-    char s2[]="sEtt";
+    char s1[20];
+    char s2[20];
+    cin>>s1>>s2;
     //cout<<"La lunghezza di s1 e"<<endl;
     if(anagrammi(s1,s2)) cout<<"s1 e s2 sono anagrammi";
     else cout<<"s1 e s2 non sono anagrammi";
